@@ -173,7 +173,7 @@ public enum AMErrorType: String, Error {
         }
     }
     
-    @objc public func configure(for env: AMEnvironment, with publicToken: String, and callbackURL: String) throws {
+    @objc public func configure(for env: AMEnvironment, with publicToken: String, andURL callbackURL: String) throws {
         
         if publicToken.isEmpty, callbackURL.isEmpty {
             throw AMErrorType.apiTokenOrCallbackURLNotProvided
